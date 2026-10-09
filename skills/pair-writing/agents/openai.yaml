@@ -1,0 +1,4 @@
+interface:
+  display_name: "一起想 · Pair 协作"
+  short_description: "日常对话中理解意图、对齐颗粒度和拓展思路；科研流程交给研究技能"
+  default_prompt: "使用 $pair-writing 按我的请求和已有授权完成对应任务。"

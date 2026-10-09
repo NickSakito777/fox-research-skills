@@ -1,0 +1,6 @@
+interface:
+  display_name: "做研究"
+  short_description: "查找论文与公开技术资料，解释相关方法，整理有出处的对比与结论"
+  default_prompt: "使用 $generative-research 查找相关资料，解释方法并给出带出处的对比。"
+policy:
+  allow_implicit_invocation: true
