@@ -3,7 +3,7 @@
 两个独立 Skill，加一个按需调用的研究编排入口。
 
 - [Pair Writing](skills/pair-writing/SKILL.md)：理解我想做什么，拆开想法里的假设，换个角度继续想。
-- [Generative Research](skills/generative-research/SKILL.md)：查找论文和公开技术资料，解释方法，整理有出处的对比与结论。
+- [Generative Research](skills/generative-research/SKILL.md)：系统检索资料，分析机制与实现链，重述问题，检查跨领域方法迁移，并形成有出处的判断。
 - [Research Workflow](skills/research-workflow/SKILL.md)：衔接问题理解、检索与最终交付，发现关键新证据时回到问题本身。
 
 前两个仍可独立使用。Research Workflow 复用已有规则，不要求每次对话都走完整流程。
@@ -22,6 +22,8 @@ Codex 的目录与显式调用方式参考 [官方 Skills 文档](https://learn.
 以下示例使用 Codex 的 `$skill-name` 写法。Claude Code 可用 `/skill-name` 调用相应 Skill。
 
 搜索和浏览器功能由使用环境提供。Research Workflow 在 Codex 中配置为显式调用，不自动接管单独的讨论或检索请求。
+
+Generative Research 的完整框架保留在主 Skill 中，检索与质量评价、跨领域迁移、执行合并、记录表达和通用案例按需从 `references/` 加载。本仓库不捆绑上游运行系统或源码快照。
 
 ## 联合使用
 
