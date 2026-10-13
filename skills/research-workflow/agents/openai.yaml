@@ -1,0 +1,6 @@
+interface:
+  display_name: "研究协作 · Research Workflow"
+  short_description: "串联意图澄清、证据检索与直接交付，按需要回到问题检查关键假设"
+  default_prompt: "使用 $research-workflow 完成我的研究任务，复用现有协作、检索与直接表达规则。"
+policy:
+  allow_implicit_invocation: false

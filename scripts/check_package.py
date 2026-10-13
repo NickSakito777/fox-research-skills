@@ -4,12 +4,12 @@ import re
 import shutil
 import tempfile
 
-NAMES = ("pair-writing", "generative-research")
+NAMES = ("pair-writing", "generative-research", "research-workflow")
 
 
 def check_skills(root):
     skills = root / "skills"
-    assert {p.name for p in skills.iterdir()} == set(NAMES), "Expected two skills"
+    assert {p.name for p in skills.iterdir()} == set(NAMES), f"Expected {len(NAMES)} skills"
     for name in NAMES:
         entry = skills / name / "SKILL.md"
         text = entry.read_text(encoding="utf-8")
@@ -41,7 +41,7 @@ def main():
         shutil.copytree(root / "skills", moved / "skills")
         shutil.copy2(root / "README.md", moved / "README.md")
         assert check_skills(moved) == count
-    print(f"PASS: two skills, {count} Markdown files, local links and relocated copy")
+    print(f"PASS: {len(NAMES)} skills, {count} Markdown files, local links and relocated copy")
 
 
 if __name__ == "__main__":
