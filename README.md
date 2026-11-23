@@ -135,3 +135,8 @@ python3 scripts/check_package.py
 检查三个 Skill 的文件结构、本地链接，以及复制到其他目录后的链接可用性。这是包结构检查，不代表模型已经通过真实调用测试。
 
 作者：[Fox](https://github.com/NickSakito777)。当前未指定开源许可证。
+
+## Acknowledgement
+
+感谢UCL数学教育专业的杜博士，他的语言思想进一步促进了Pair-Writing的形成
+感谢图像处理与人工智能的周博士，她的建议促成了我编写generative-research的动机
